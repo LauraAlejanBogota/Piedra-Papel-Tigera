@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego</title>
+
+<style>
+    body{
+        background-color: aquamarine;
+        text-align: center;
+    }
+    img{
+        height: 210px;
+        width: 210px;
+        background-color: beige;
+        border-width: 3px;
+        border-style: solid;
+        border-color: crimson;
+        border-radius: 5px;
+    }
+    div{
+        margin:0 10px 0 10px;
+        display: flex;
+        justify-content: center;
+    }
+    h1{
+        color: crimson;
+        font-size:xx-large ;
+    }
+    section h3{
+        font-size:x-large ;
+    }
+</style>
+
+</head>
+<body>
+    
+    <section>
+        <h2>Juego de Piedra, Papel o Tijera</h2>
+        <h3>Seleccion una opcion entre las imagenes</h3>
+    </section>
+
+    <div >
+        <div onclick="usuario(0);" id="piedra"><img src="piedra.png"></div>
+        <div onclick="usuario(1);" id="papel"><img src="papel.png" ></div>
+        <div onclick="usuario(2);" id="tijera"><img src="tijera.png"></div>
+        <div onclick="usuario(3);" id="lagarto"><img src="lagarto.jpg"></div>
+        <div onclick="usuario(4);" id="spock"><img src="spock.jpg"></div>
+    </div>
+
+    <section>
+        <span id="efecto"></span>
+    </section>
+
+
+</body>
+<script src="juego.js"></script>
+</html>
